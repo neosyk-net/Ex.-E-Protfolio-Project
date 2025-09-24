@@ -1,49 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Runerdy Castillo</title>
-    <link rel="stylesheet" href="style.css">
-    <style src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></style>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bb9c1109be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="index.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "5FCkLIgTwdMXbV0pi",
+      });
+   })();
+</script>
+  </head>
+
+
+  <body>
     <section id="landing-page">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets ex. e/logo.svg" alt="logo">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets ex. e/logo.svg" alt="logo" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content"></div>
+        <h1 class="title">Hey</h1>
+        <h1 class="title indigo">I'm Runerdy</h1>
+        <p class="header__para">
+          <b class="indigo">Frontend software engineer</b> turning ideas into
+          interactive, responsive, and user-friendly web experiences.
+          <br />
+          Here's more <b class="indigo">about me.</b>
+        </p>
+        <div class="social__list">
+          <a
+            href="https://www.linkedin.com/in/runerdy-castillo-76b607166/?trk=PROFILE_DROP_DOWN"
+            target="_blank"
+            class="social__link click"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/neosyk-net"
+            target="_blank"
+            class="social__link click"
+          >
+            <i class="fa-brands fa-github-alt"></i>
+          </a>
+          <a href="" target="_blank" class="social__link click">
+            <i class="fa-solid fa-file"></i>
+          </a>
+        </div>
+      </header>
+      <button class="mail__button click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+          <p class="modal__para">
+            I’m a <b class="indigo">frontend developer</b> passionate about creating clean,
+            responsive, and user-friendly web applications. I specialize in
+            <b class="indigo">HTML, CSS</b> and <b class="indigo">JavaScript</b>, and I’m growing my expertise with modern
+            frameworks like <b class="indigo">React</b>.<br> My strength is translating <b class="indigo">design concepts</b>
+            into <b class="indigo">functional, accessible code</b> that enhances user experience while
+            keeping performance in mind. I’m eager to apply my skills on real
+            projects, contribute to team success, and continue sharpening my
+            craft as a <b class="indigo">developer.</b>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/1051/1051277.png" alt="">
+                <span class="language__name">HTML</span>
             </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">About</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projects</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Contact</a>
-                </li>
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
-                </li>
-            </ul>
-        </nav>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/16020/16020753.png" alt="">
+                <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="">
+                <span class="language__name">Javascript</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="">
+                <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I would love to hear from you.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">E-mail</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the messsage! Looking forward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark modal__exit click"></i>
+      </div>
     </section>
-</body>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are my <span class="indigo">Projects!</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets ex. e/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Name of the Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Saepe sint itaque recusandae corporis soluta minus amet
+                    harum accusantium at enim, rerum nam rem numquam ipsam
+                    praesentium adipisci quasi veritatis culpa.
+                  </p>
+                  <div class="project__description--link">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets ex. e/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Name of the Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Saepe sint itaque recusandae corporis soluta minus amet
+                    harum accusantium at enim, rerum nam rem numquam ipsam
+                    praesentium adipisci quasi veritatis culpa.
+                  </p>
+                  <div class="project__description--link">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets ex. e/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Name of the Project
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, Javascript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Saepe sint itaque recusandae corporis soluta minus amet
+                    harum accusantium at enim, rerum nam rem numquam ipsam
+                    praesentium adipisci quasi veritatis culpa.
+                  </p>
+                  <div class="project__description--link">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-file"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img
+              src="./assets ex. e/logo.svg"
+              class="footer__logo--img"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/neosyk-net"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://github.com/neosyk-net"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Linkedin
+            </a>
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="https://github.com/neosyk-net"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2025 Created by Runerdy Castillo
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
