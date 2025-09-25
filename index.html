@@ -44,7 +44,7 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -68,7 +68,7 @@
           <b class="indigo">Frontend software engineer</b> turning ideas into
           interactive, responsive, and user-friendly web experiences.
           <br />
-          Here's more <b class="indigo">about me.</b>
+          Here's more <b class="indigo" onclick="toggleModal()">about me.</b>
         </p>
         <div class="social__list">
           <a
@@ -99,7 +99,7 @@
       <div class="modal">
         <div class="modal__half modal__about">
           <h3 class="modal__title modal__title--about">
-            Here's a bit about me.
+            Here's a bit <b class="indigo click">about me.</b>
           </h3>
           <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
           <p class="modal__para">
@@ -132,6 +132,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -162,7 +163,6 @@
             Thanks for the messsage! Looking forward to speaking to you soon.
           </div>
         </div>
-        <i class="fa-solid fa-xmark modal__exit click"></i>
       </div>
     </section>
     <section id="projects">

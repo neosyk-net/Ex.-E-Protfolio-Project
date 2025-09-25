@@ -125,6 +125,24 @@ a {
     width: 100%;
 }
 
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 700ms;
+}
+
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+
 /* 
 
     LANDING PAGE
@@ -277,7 +295,7 @@ nav {
     display: flex;
     visibility: hidden;
     z-index: -1;
-    transition: visibilty 1s, z-index 1s, box-shadow 0.5 ease;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5 ease;
 }
 
 .modal--open .modal {
@@ -306,6 +324,13 @@ nav {
     background-color: rgb(245, 245, 245);
     transform: translateX(-110%);
 }
+
+.modal__contact {
+    background-color: #242424;
+    color: white;
+    transform: translateX(110%);
+}
+
 
 
 .modal__languages {
@@ -343,11 +368,6 @@ nav {
     width: 100%;
 }
 
-.modal__contact {
-    background-color: #242424;
-    color: white;
-    transform: translateX(110%);
-}
 
 .modal__title {
     font-size: 26px;
