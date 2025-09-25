@@ -11,7 +11,7 @@ function contact(event) {
     emailjs
         .sendForm(
             'service_006c53z',
-            'template_s3chdi9',
+            'template_6eys3pm',
             event.target,
             '5FCkLIgTwdMXbV0pi'
         ).then(() => {
@@ -23,5 +23,15 @@ function contact(event) {
                 "The email service is temporarily unavailable. Please contact me directly at runerdy@gmail.com"
             );
         })
+    }
+
+    let isModalOpen = false;
+    function toggleModal() {
+        if (isModalOpen) {
+            isModalOpen = false;
+            return document.body.classList.remove("modal--open");
+        }
+        isModalOpen = true;
+        document.body.classList += " modal--open";
     }
 
